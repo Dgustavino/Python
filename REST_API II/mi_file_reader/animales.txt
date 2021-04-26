@@ -1,0 +1,5 @@
+ballenas,100,agua
+abejas,54540,aire
+felinos,300,tierra
+microbios,4000000,fuego
+holahola

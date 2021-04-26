@@ -1,0 +1,31 @@
+Buena practica es generar un file con sus objetivos - requerimientos y ir marcando uno por uno.
+
+Existe una metodologia llamad T D D ( Test Driven Developement), sin profundizar en la misma.
+La ciencia es decir:
+-> Debo hacer un log in:
+   -> capturar los credenciales
+      -> creo metodo para crear credenciales vacio (y no sirve, pero existe  I.E pass)
+         -> creo el contenido el metodo sin sus dependencias (escribe el metodo sin las funcionalidades externas)
+           -> crea los elementos externos para que ese metodo si sirva ahora
+              -> refactor (limpiar el codigo, y optimizar)
+
+pasos:
+1) def logIn():
+      pass
+
+2) def logiN(credenciales):
+      resultado = controllador_jugador.revisarCredenciales(credenciales)
+      if resultado:
+          "credenciales correctos!"
+      else:
+          "credenciales incorrectos"
+
+3) Class controllador_jugador:
+    etc..etc..etc...
+    def revisarCredenciales():
+        codigo
+
+CASES:
+ - create a REST API to resolve requests-response / render a template
+ - create a REST API that returns data from file
+ - create a REST API that inyects SQL queries
